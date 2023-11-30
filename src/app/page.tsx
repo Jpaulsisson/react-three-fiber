@@ -16,8 +16,8 @@ export default function Home() {
       </Canvas>
       <Canvas>
         <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <Sphere position={[1, 1, .2]} />
+        <directionalLight position={[100, 100, 10]} />
+        <Sphere position={[1, 1, 1]} />
       </Canvas>
     </main>
   )
