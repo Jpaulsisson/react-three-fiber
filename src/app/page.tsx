@@ -5,6 +5,7 @@ import { Canvas } from '@react-three/fiber'
 import Box from '@/components/box/Box'
 import Sphere from '@/components/sphere/Sphere';
 import Extrude from '@/components/extrude/Extrude';
+import Cone from '@/components/cone/Cone';
 
 export default function Home() {
   return (
@@ -24,6 +25,11 @@ export default function Home() {
         <ambientLight />
         <directionalLight position={[100, 100, 10]} />
         <Extrude position={[1, 1, 1]} />
+      </Canvas>
+      <Canvas>
+        <ambientLight />
+        <directionalLight position={[100, 100, 10]} />
+        <Cone position={[1, 1, 1]} />
       </Canvas>
     </main>
   )
