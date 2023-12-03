@@ -20,7 +20,7 @@ function Cone(props) {
       onPointerOver={(event) => setHover(true)}
       onPointerOut={(event) => setHover(false)}>
       <coneGeometry args={[1, 3, 4]} />
-      <meshStandardMaterial color={hovered ? 'violet' : 'aquamarine'} />
+      <meshPhongMaterial color={hovered ? '#ffffff' : '#111'} refractionRatio={20} />
     </mesh>
   )
 }
