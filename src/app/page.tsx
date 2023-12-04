@@ -30,7 +30,7 @@ export default function Home() {
         <ambientLight />
         <directionalLight position={[100, 50, 50]} />
         <directionalLight position={[25, 75, 25]} />
-        <Cone position={[1, 1, 1]} />
+        <Cone position={[5, 0, 2]} />
       </Canvas>
     </main>
   )
