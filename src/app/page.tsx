@@ -16,17 +16,17 @@ export default function Home() {
         <Box position={[-1.2, -1, 1]} />
         <Box position={[1.2, 0, 0]} />
       </Canvas>
-      <Canvas>
+      <Canvas camera={{ fov: 75, near: 0.1, far: 1000, position: [10, 10, 5] }}>
         <ambientLight />
         <directionalLight position={[100, 100, 10]} />
         <Sphere position={[1, 1, 1]} />
       </Canvas>
-      <Canvas>
+      <Canvas camera={{ fov: 175, near: 0.5, far: 2000, position: [0, 0, 5] }}>
         <ambientLight />
         <directionalLight position={[100, 100, 10]} />
         <Extrude position={[1, 1, 1]} />
       </Canvas>
-      <Canvas>
+      <Canvas camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 5] }}>
         <ambientLight />
         <directionalLight position={[100, 50, 50]} />
         <directionalLight position={[25, 75, 25]} />
